@@ -1,0 +1,2211 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		42D981ED87B4406F8548DE95 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = CEBA3C0DB9C0413DBE9D1E54 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				7BD56AF8A3FF6E7CF81808C9 /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		6D4F8FB9AF23431E83F754D9 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = CD4FF1B8903B4F84BDE4CF14 /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				B13FBE4FF32A4AE3A258B09B /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		9D5AD0F2851C4137B477E38B /* uninstall */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = B487C9AC16C845DC9BD1A784 /* Build configuration list for PBXAggregateTarget "uninstall" */;
+			buildPhases = (
+				A36FA767C80235EDC3FBD1AF /* Generate ThirdParty/glfw/CMakeFiles/uninstall */,
+			);
+			dependencies = (
+			);
+			name = uninstall;
+			productName = uninstall;
+		};
+		D96C9657BC3D460C94DB0030 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 7BDA9F4BBCBD4AD6B027C6A3 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				17CB3034EBFE23F940576C99 /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				18A14A1412DF4A36B8E7DAB8 /* PBXTargetDependency */,
+				9D729174F8BC4EC9A11E6980 /* PBXTargetDependency */,
+				EC6FFE0751004A8AAEA33049 /* PBXTargetDependency */,
+				0F457A95D4C34A9D93831AFF /* PBXTargetDependency */,
+				562966DEB3B049D78173F550 /* PBXTargetDependency */,
+				4B04DE2C587D4980934CC171 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		02FC046AF4E24EF0AD9C7A13 /* MeshModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9043CE1D9B3A452AAB0C16FC /* MeshModel.cpp */; };
+		18FB33CB2971A68100A6F983 /* Lighting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18FB33CA2971A68100A6F983 /* Lighting.cpp */; };
+		20BC6B7F42CB49328DBE4388 /* egl_context.c in Sources */ = {isa = PBXBuildFile; fileRef = 0DEC676C681543AD836FCA6B /* egl_context.c */; };
+		2606131EF74743669A45F9B0 /* cocoa_init.m in Sources */ = {isa = PBXBuildFile; fileRef = D904C0F916D148FBB485794E /* cocoa_init.m */; };
+		34216DA6F6864E138AD49F49 /* input.c in Sources */ = {isa = PBXBuildFile; fileRef = BE779C7B3A0E418E820150F2 /* input.c */; };
+		460D8A82D8F34EB381CB2785 /* imgui_demo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B8DF4A83F60C408CA67C2FCB /* imgui_demo.cpp */; };
+		51ACFB5B017342B0B18CD9BA /* imgui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D74A17D791944925A66F8CBD /* imgui.cpp */; };
+		52EF47439F454922BBED5749 /* Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F392A424A6042AF91EC4D89 /* Scene.cpp */; };
+		575CC90068FC4C36969126F4 /* nsgl_context.m in Sources */ = {isa = PBXBuildFile; fileRef = 5909D69014BF45EEAAD2BB70 /* nsgl_context.m */; };
+		62C9028258B244059DBA64A6 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D38806DB09F4874B34AA140 /* main.cpp */; };
+		63C82986D88E427D9217F36E /* init.c in Sources */ = {isa = PBXBuildFile; fileRef = C34AC2A0D3A34649A25F6746 /* init.c */; };
+		6868A6C959A54E67BA91C36A /* Utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E238D678A34D2F91FDED83 /* Utils.cpp */; };
+		714BB14B7C6A462F837E7015 /* cocoa_window.m in Sources */ = {isa = PBXBuildFile; fileRef = 11289FE3DF664AA29C57513B /* cocoa_window.m */; };
+		7814085DDDF44ADEAC3D79F3 /* window.c in Sources */ = {isa = PBXBuildFile; fileRef = 3F10CDDB21A0488B9DADD03E /* window.c */; };
+		79D8992D94BC4C798739C4D9 /* posix_thread.c in Sources */ = {isa = PBXBuildFile; fileRef = 0EECB751BF7B4963BD8B6E54 /* posix_thread.c */; };
+		7C6B8ECFE65E45B9ADCAB57E /* cocoa_time.c in Sources */ = {isa = PBXBuildFile; fileRef = 928867876F2246FBB6EF4649 /* cocoa_time.c */; };
+		7DA3C1FED1D444DCBD6D0EA6 /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B221439886614B3BA4F6E953 /* Camera.cpp */; };
+		88B8FF41E90D4C46BA39A89D /* Face.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5C7C4BD24B224AE087195011 /* Face.cpp */; };
+		BDCA1C7C8E5145038180A76A /* imgui_draw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 924893EA72B8415490E46B94 /* imgui_draw.cpp */; };
+		BE2FAED1381841D09BEA1701 /* osmesa_context.c in Sources */ = {isa = PBXBuildFile; fileRef = DDB6A64BF6E64388B0F2908F /* osmesa_context.c */; };
+		C394F6D90D4B492EA4F903C7 /* imgui_widgets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0F21436CC1A40DEA57F3E50 /* imgui_widgets.cpp */; };
+		C826D187FA694EE8844B39B0 /* nfd_common.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C3A143FCE4D4E26920ED87B /* nfd_common.c */; };
+		CDBD625DB76F4E579C920449 /* monitor.c in Sources */ = {isa = PBXBuildFile; fileRef = 092070BB945C4F83A36AB127 /* monitor.c */; };
+		D1EB04F3CC0A4D70BC3481C2 /* context.c in Sources */ = {isa = PBXBuildFile; fileRef = EE4C4FAEE3D54F1BB208E3C0 /* context.c */; };
+		DAE4F5BD78A648B18CBF590D /* vulkan.c in Sources */ = {isa = PBXBuildFile; fileRef = 95F369AE46454CB5AFDF95E5 /* vulkan.c */; };
+		DE2C76E628B24C5FBC65B708 /* InitShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FEA57DB8BE2C4D19A13E9CA3 /* InitShader.cpp */; };
+		E7ADF78F587A466FA85A39DE /* cocoa_monitor.m in Sources */ = {isa = PBXBuildFile; fileRef = F760A676C8DB4F5080A8DCEE /* cocoa_monitor.m */; };
+		E98097A3AD4B4F87B0D9AA65 /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = E105417C64C4400394D68239 /* glad.c */; };
+		EAD11358348A45BBAD29E910 /* cocoa_joystick.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F9A4BEC30254740B8AF8603 /* cocoa_joystick.m */; };
+		ED610CE224644019B92E3663 /* imgui_impl_opengl3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 380AC2EDA3A34DAE8E550F90 /* imgui_impl_opengl3.cpp */; };
+		EF0B93A4C5054C46AFAB92D7 /* nfd_cocoa.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2426698E1E45B8A6F52EFB /* nfd_cocoa.m */; };
+		EF9C8C3F410141DC9F9CB406 /* Renderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30ADA3A56F7047B8AB44259E /* Renderer.cpp */; };
+		F415EE4A1F464CB0BA8D4D25 /* imgui_impl_glfw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 876BBFE92E6044ADB4742D52 /* imgui_impl_glfw.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		10CD0E8FECEA41D58F809E19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62825871F01444909AE387BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42D981ED87B4406F8548DE95;
+			remoteInfo = ZERO_CHECK;
+		};
+		124FDFDFDF3F4E0492579476 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62825871F01444909AE387BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B887B268D294BD1A21DF3F9;
+			remoteInfo = imgui;
+		};
+		1E463581CE4A49AFA2C5F96B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62825871F01444909AE387BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42D981ED87B4406F8548DE95;
+			remoteInfo = ZERO_CHECK;
+		};
+		275BFF680EA744E0BE2409F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62825871F01444909AE387BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB3F23F3C9224CA39CE5FB2E;
+			remoteInfo = glfw;
+		};
+		48A832926BE3450F8370FBE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62825871F01444909AE387BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B887B268D294BD1A21DF3F9;
+			remoteInfo = imgui;
+		};
+		5227F912DE8844788CAA6D00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62825871F01444909AE387BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE1A6BCA59194C65A926BA6C;
+			remoteInfo = glad;
+		};
+		62B373522163461786FF19F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62825871F01444909AE387BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9185DE501EDA4C4EB79E7388;
+			remoteInfo = nativefiledialog;
+		};
+		7955C7EBB76C413D89534312 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62825871F01444909AE387BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9185DE501EDA4C4EB79E7388;
+			remoteInfo = nativefiledialog;
+		};
+		A7819693F29B44CF95D19487 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62825871F01444909AE387BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65B87A226573418EA13198B8;
+			remoteInfo = MeshViewer;
+		};
+		CF05036014074ACDA32451F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62825871F01444909AE387BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D96C9657BC3D460C94DB0030;
+			remoteInfo = ALL_BUILD;
+		};
+		D3CF13326167453AB1DF02BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62825871F01444909AE387BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE1A6BCA59194C65A926BA6C;
+			remoteInfo = glad;
+		};
+		DE9A9804868D44F5AF1A15BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62825871F01444909AE387BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB3F23F3C9224CA39CE5FB2E;
+			remoteInfo = glfw;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00900E47A0864F04A011A5FD /* libglfw3.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libglfw3.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		05763FE43CB5467AAF97A700 /* cocoa_platform.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cocoa_platform.h; path = ThirdParty/glfw/src/cocoa_platform.h; sourceTree = SOURCE_ROOT; };
+		059631F1B9334FEC8419E1A1 /* imgui_impl_glfw.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = imgui_impl_glfw.h; path = Viewer/include/imgui_impl_glfw.h; sourceTree = SOURCE_ROOT; };
+		07D015F855984B5F9F68DBF9 /* vshader.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = vshader.glsl; path = Viewer/shaders/vshader.glsl; sourceTree = SOURCE_ROOT; };
+		092070BB945C4F83A36AB127 /* monitor.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = monitor.c; path = ThirdParty/glfw/src/monitor.c; sourceTree = SOURCE_ROOT; };
+		0DEC676C681543AD836FCA6B /* egl_context.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = egl_context.c; path = ThirdParty/glfw/src/egl_context.c; sourceTree = SOURCE_ROOT; };
+		0EECB751BF7B4963BD8B6E54 /* posix_thread.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = posix_thread.c; path = ThirdParty/glfw/src/posix_thread.c; sourceTree = SOURCE_ROOT; };
+		11289FE3DF664AA29C57513B /* cocoa_window.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_window.m; path = ThirdParty/glfw/src/cocoa_window.m; sourceTree = SOURCE_ROOT; };
+		12977AB321A54DBEA760E899 /* osmesa_context.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = osmesa_context.h; path = ThirdParty/glfw/src/osmesa_context.h; sourceTree = SOURCE_ROOT; };
+		18FB33CA2971A68100A6F983 /* Lighting.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Lighting.cpp; sourceTree = "<group>"; };
+		18FB33CC2971A6A600A6F983 /* Lighting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Lighting.h; sourceTree = "<group>"; };
+		1F392A424A6042AF91EC4D89 /* Scene.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Scene.cpp; path = Viewer/src/Scene.cpp; sourceTree = SOURCE_ROOT; };
+		20A9D6050BDD404AADBA37C0 /* mappings.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = mappings.h; path = ThirdParty/glfw/src/mappings.h; sourceTree = SOURCE_ROOT; };
+		257705D7E3DF4A18859AD26E /* imstb_rectpack.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = imstb_rectpack.h; path = ThirdParty/imgui/imgui/imstb_rectpack.h; sourceTree = SOURCE_ROOT; };
+		2D38806DB09F4874B34AA140 /* main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = Viewer/src/main.cpp; sourceTree = SOURCE_ROOT; };
+		30A0A14DD4C6401AB7417926 /* Scene.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Scene.h; path = Viewer/include/Scene.h; sourceTree = SOURCE_ROOT; };
+		30ADA3A56F7047B8AB44259E /* Renderer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Renderer.cpp; path = Viewer/src/Renderer.cpp; sourceTree = SOURCE_ROOT; };
+		314DAF66FD0B4091A501F553 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = ThirdParty/nativefiledialog/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		32CE8DB50EF64736BCCB2C71 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		380AC2EDA3A34DAE8E550F90 /* imgui_impl_opengl3.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = imgui_impl_opengl3.cpp; path = Viewer/src/imgui_impl_opengl3.cpp; sourceTree = SOURCE_ROOT; };
+		3C3A143FCE4D4E26920ED87B /* nfd_common.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = nfd_common.c; path = ThirdParty/nativefiledialog/nativefiledialog/src/nfd_common.c; sourceTree = SOURCE_ROOT; };
+		3F10CDDB21A0488B9DADD03E /* window.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = window.c; path = ThirdParty/glfw/src/window.c; sourceTree = SOURCE_ROOT; };
+		442C57DDB5C54F298C0CCBD9 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		4AA6B20EBAFF4B81BECBEE1E /* nsgl_context.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = nsgl_context.h; path = ThirdParty/glfw/src/nsgl_context.h; sourceTree = SOURCE_ROOT; };
+		4E23FFD0926B4DDBA316B4F4 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = ThirdParty/glfw/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		5909D69014BF45EEAAD2BB70 /* nsgl_context.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = nsgl_context.m; path = ThirdParty/glfw/src/nsgl_context.m; sourceTree = SOURCE_ROOT; };
+		5C7C4BD24B224AE087195011 /* Face.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Face.cpp; path = Viewer/src/Face.cpp; sourceTree = SOURCE_ROOT; };
+		5ED5ABE2A6F84207AEFF66B3 /* imconfig.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = imconfig.h; path = ThirdParty/imgui/imgui/imconfig.h; sourceTree = SOURCE_ROOT; };
+		6E254F5460AE42B7A027AC2D /* Camera.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Camera.h; path = Viewer/include/Camera.h; sourceTree = SOURCE_ROOT; };
+		6F9A4BEC30254740B8AF8603 /* cocoa_joystick.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_joystick.m; path = ThirdParty/glfw/src/cocoa_joystick.m; sourceTree = SOURCE_ROOT; };
+		73B838D14BCB472BB94C50F6 /* imgui_impl_opengl3.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = imgui_impl_opengl3.h; path = Viewer/include/imgui_impl_opengl3.h; sourceTree = SOURCE_ROOT; };
+		7980F74C07304542804A4A65 /* libglad.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libglad.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E23B9C5C0C44F2A9C544E53 /* glad.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glad.h; path = ThirdParty/glad/include/glad/glad.h; sourceTree = SOURCE_ROOT; };
+		7E83154532414E3888A432CA /* Utils.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Utils.h; path = Viewer/include/Utils.h; sourceTree = SOURCE_ROOT; };
+		8288E83EE2944FCBB2D5EFB4 /* cocoa_joystick.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cocoa_joystick.h; path = ThirdParty/glfw/src/cocoa_joystick.h; sourceTree = SOURCE_ROOT; };
+		876BBFE92E6044ADB4742D52 /* imgui_impl_glfw.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = imgui_impl_glfw.cpp; path = Viewer/src/imgui_impl_glfw.cpp; sourceTree = SOURCE_ROOT; };
+		8F4597D52F0C432386D28E90 /* libimgui.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libimgui.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9043CE1D9B3A452AAB0C16FC /* MeshModel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MeshModel.cpp; path = Viewer/src/MeshModel.cpp; sourceTree = SOURCE_ROOT; };
+		924893EA72B8415490E46B94 /* imgui_draw.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = imgui_draw.cpp; path = ThirdParty/imgui/imgui/imgui_draw.cpp; sourceTree = SOURCE_ROOT; };
+		928867876F2246FBB6EF4649 /* cocoa_time.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = cocoa_time.c; path = ThirdParty/glfw/src/cocoa_time.c; sourceTree = SOURCE_ROOT; };
+		94AD00752D0D4E72A7818E57 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = ThirdParty/glfw/src/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		95F369AE46454CB5AFDF95E5 /* vulkan.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = vulkan.c; path = ThirdParty/glfw/src/vulkan.c; sourceTree = SOURCE_ROOT; };
+		9745221CEA5C4651A4BE907F /* MeshModel.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = MeshModel.h; path = Viewer/include/MeshModel.h; sourceTree = SOURCE_ROOT; };
+		9F7167C75824495FB6BA2558 /* imstb_truetype.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = imstb_truetype.h; path = ThirdParty/imgui/imgui/imstb_truetype.h; sourceTree = SOURCE_ROOT; };
+		A4BB2A30990441BE8A2DDF2A /* khrplatform.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = khrplatform.h; path = ThirdParty/glad/include/KHR/khrplatform.h; sourceTree = SOURCE_ROOT; };
+		A50DB53581494D7B876F007A /* fshader.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = fshader.glsl; path = Viewer/shaders/fshader.glsl; sourceTree = SOURCE_ROOT; };
+		A6EBC97B4E494B20B280F979 /* libnativefiledialog.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libnativefiledialog.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB0777B590BB4B668763AE0E /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = ThirdParty/imgui/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		AE2426698E1E45B8A6F52EFB /* nfd_cocoa.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = nfd_cocoa.m; path = ThirdParty/nativefiledialog/nativefiledialog/src/nfd_cocoa.m; sourceTree = SOURCE_ROOT; };
+		B000D7F0C3B547B5A09EB509 /* InitShader.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = InitShader.h; path = Viewer/include/InitShader.h; sourceTree = SOURCE_ROOT; };
+		B0C2F4D195DC46B9B92EABB2 /* nfd_common.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = nfd_common.h; path = ThirdParty/nativefiledialog/nativefiledialog/src/nfd_common.h; sourceTree = SOURCE_ROOT; };
+		B221439886614B3BA4F6E953 /* Camera.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Camera.cpp; path = Viewer/src/Camera.cpp; sourceTree = SOURCE_ROOT; };
+		B529BFDA02AB4C2DACF8956B /* glfw3native.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw3native.h; path = ThirdParty/glfw/include/GLFW/glfw3native.h; sourceTree = SOURCE_ROOT; };
+		B8DF4A83F60C408CA67C2FCB /* imgui_demo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = imgui_demo.cpp; path = ThirdParty/imgui/imgui/imgui_demo.cpp; sourceTree = SOURCE_ROOT; };
+		BB4719F11C8B4BB1A6073DFE /* Face.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Face.h; path = Viewer/include/Face.h; sourceTree = SOURCE_ROOT; };
+		BE779C7B3A0E418E820150F2 /* input.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = input.c; path = ThirdParty/glfw/src/input.c; sourceTree = SOURCE_ROOT; };
+		C11895D190AC46408CACD99B /* internal.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = internal.h; path = ThirdParty/glfw/src/internal.h; sourceTree = SOURCE_ROOT; };
+		C34AC2A0D3A34649A25F6746 /* init.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = init.c; path = ThirdParty/glfw/src/init.c; sourceTree = SOURCE_ROOT; };
+		C5029D6AA80945CF99A6ABCD /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = ThirdParty/glad/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		D0F21436CC1A40DEA57F3E50 /* imgui_widgets.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = imgui_widgets.cpp; path = ThirdParty/imgui/imgui/imgui_widgets.cpp; sourceTree = SOURCE_ROOT; };
+		D1E238D678A34D2F91FDED83 /* Utils.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Utils.cpp; path = Viewer/src/Utils.cpp; sourceTree = SOURCE_ROOT; };
+		D7313294B1A7447FAFE2DABE /* glfw3.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw3.h; path = ThirdParty/glfw/include/GLFW/glfw3.h; sourceTree = SOURCE_ROOT; };
+		D74A17D791944925A66F8CBD /* imgui.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = imgui.cpp; path = ThirdParty/imgui/imgui/imgui.cpp; sourceTree = SOURCE_ROOT; };
+		D904C0F916D148FBB485794E /* cocoa_init.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_init.m; path = ThirdParty/glfw/src/cocoa_init.m; sourceTree = SOURCE_ROOT; };
+		DDB6A64BF6E64388B0F2908F /* osmesa_context.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = osmesa_context.c; path = ThirdParty/glfw/src/osmesa_context.c; sourceTree = SOURCE_ROOT; };
+		DEB685EB36FD487DB6A317A1 /* Renderer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Renderer.h; path = Viewer/include/Renderer.h; sourceTree = SOURCE_ROOT; };
+		E105417C64C4400394D68239 /* glad.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = glad.c; path = ThirdParty/glad/src/glad.c; sourceTree = SOURCE_ROOT; };
+		E1E3CA1ED5FB48EF9014EEA6 /* imgui.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = imgui.h; path = ThirdParty/imgui/imgui/imgui.h; sourceTree = SOURCE_ROOT; };
+		E3625C57A3EC46BCB40DF90F /* glfw_config.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw_config.h; path = Build/ThirdParty/glfw/src/glfw_config.h; sourceTree = SOURCE_ROOT; };
+		E5A5AD4D9EEF4B9D8E7985A8 /* posix_thread.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = posix_thread.h; path = ThirdParty/glfw/src/posix_thread.h; sourceTree = SOURCE_ROOT; };
+		ED9FF730EF574950816A1CCC /* imgui_internal.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = imgui_internal.h; path = ThirdParty/imgui/imgui/imgui_internal.h; sourceTree = SOURCE_ROOT; };
+		EE4C4FAEE3D54F1BB208E3C0 /* context.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = context.c; path = ThirdParty/glfw/src/context.c; sourceTree = SOURCE_ROOT; };
+		EFE0D30CE19B4A549F1CED02 /* imstb_textedit.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = imstb_textedit.h; path = ThirdParty/imgui/imgui/imstb_textedit.h; sourceTree = SOURCE_ROOT; };
+		F6760DEE9A324FC28C4933B0 /* egl_context.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = egl_context.h; path = ThirdParty/glfw/src/egl_context.h; sourceTree = SOURCE_ROOT; };
+		F760A676C8DB4F5080A8DCEE /* cocoa_monitor.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_monitor.m; path = ThirdParty/glfw/src/cocoa_monitor.m; sourceTree = SOURCE_ROOT; };
+		FD439DF677A94437A86E97C7 /* MeshViewer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = MeshViewer; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEA57DB8BE2C4D19A13E9CA3 /* InitShader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = InitShader.cpp; path = Viewer/src/InitShader.cpp; sourceTree = SOURCE_ROOT; wrapsLines = 1; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		49A25F820788465EA6B084DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DF7E144EFBE452A924F01DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A63FC6DF5C4642038CC505D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8852158B0D84F7F90D21AB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFFC33753F574B348001082E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0867AED7C83A4A73AAE43F36 /* uninstall */ = {
+			isa = PBXGroup;
+			children = (
+				C4E258E30AE14E3892D0942E /* CMake Rules */,
+				4E23FFD0926B4DDBA316B4F4 /* CMakeLists.txt */,
+			);
+			name = uninstall;
+			sourceTree = "<group>";
+		};
+		0B295AAD97F146B386298478 /* Shader Files */ = {
+			isa = PBXGroup;
+			children = (
+				A50DB53581494D7B876F007A /* fshader.glsl */,
+				07D015F855984B5F9F68DBF9 /* vshader.glsl */,
+			);
+			name = "Shader Files";
+			sourceTree = "<group>";
+		};
+		0BE196805EAF4C95B1D7EFB2 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				A4BB2A30990441BE8A2DDF2A /* khrplatform.h */,
+				7E23B9C5C0C44F2A9C544E53 /* glad.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		11FB7BB9249248828358229B /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				B221439886614B3BA4F6E953 /* Camera.cpp */,
+				5C7C4BD24B224AE087195011 /* Face.cpp */,
+				FEA57DB8BE2C4D19A13E9CA3 /* InitShader.cpp */,
+				9043CE1D9B3A452AAB0C16FC /* MeshModel.cpp */,
+				30ADA3A56F7047B8AB44259E /* Renderer.cpp */,
+				1F392A424A6042AF91EC4D89 /* Scene.cpp */,
+				D1E238D678A34D2F91FDED83 /* Utils.cpp */,
+				876BBFE92E6044ADB4742D52 /* imgui_impl_glfw.cpp */,
+				380AC2EDA3A34DAE8E550F90 /* imgui_impl_opengl3.cpp */,
+				2D38806DB09F4874B34AA140 /* main.cpp */,
+				18FB33CA2971A68100A6F983 /* Lighting.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		13AABE3A4BFD4AE2B006EB28 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				B0C2F4D195DC46B9B92EABB2 /* nfd_common.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		13F7921FB9114A56992FB0CB /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				D74A17D791944925A66F8CBD /* imgui.cpp */,
+				B8DF4A83F60C408CA67C2FCB /* imgui_demo.cpp */,
+				924893EA72B8415490E46B94 /* imgui_draw.cpp */,
+				D0F21436CC1A40DEA57F3E50 /* imgui_widgets.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		184B50385A1442D095712C1E /* nativefiledialog */ = {
+			isa = PBXGroup;
+			children = (
+				C4EEB13B16D84CCB952F79CB /* Source Files */,
+				13AABE3A4BFD4AE2B006EB28 /* Header Files */,
+				314DAF66FD0B4091A501F553 /* CMakeLists.txt */,
+			);
+			name = nativefiledialog;
+			sourceTree = "<group>";
+		};
+		287DDC0F1AF8436E919228DD /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				5ED5ABE2A6F84207AEFF66B3 /* imconfig.h */,
+				E1E3CA1ED5FB48EF9014EEA6 /* imgui.h */,
+				ED9FF730EF574950816A1CCC /* imgui_internal.h */,
+				257705D7E3DF4A18859AD26E /* imstb_rectpack.h */,
+				EFE0D30CE19B4A549F1CED02 /* imstb_textedit.h */,
+				9F7167C75824495FB6BA2558 /* imstb_truetype.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		2C686C533DEB4128AB8D3856 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD439DF677A94437A86E97C7 /* MeshViewer */,
+				7980F74C07304542804A4A65 /* libglad.a */,
+				00900E47A0864F04A011A5FD /* libglfw3.a */,
+				8F4597D52F0C432386D28E90 /* libimgui.a */,
+				A6EBC97B4E494B20B280F979 /* libnativefiledialog.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32C8056E61FC4324B2A34D35 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				CA3DBEA07B9647E28F648BA8 /* CMake Rules */,
+				32CE8DB50EF64736BCCB2C71 /* CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		3E24AA1DF58F414B9E4B18BE = {
+			isa = PBXGroup;
+			children = (
+				570C4BEE06EE47FABDDBE230 /* MeshViewer */,
+				32C8056E61FC4324B2A34D35 /* ALL_BUILD */,
+				6E651E3350644E568A0BD356 /* glad */,
+				B96B5282B8B14A9E848D97CD /* GLFW3 */,
+				F410AF32B85843DA890006B3 /* imgui */,
+				B55619F2E20A48EB8DE186FC /* nativefiledialog */,
+				2C686C533DEB4128AB8D3856 /* Products */,
+				B32B06BEAB0B45CABFAEEE7D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		540A874E375445B5B40472EA /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				D904C0F916D148FBB485794E /* cocoa_init.m */,
+				6F9A4BEC30254740B8AF8603 /* cocoa_joystick.m */,
+				F760A676C8DB4F5080A8DCEE /* cocoa_monitor.m */,
+				928867876F2246FBB6EF4649 /* cocoa_time.c */,
+				11289FE3DF664AA29C57513B /* cocoa_window.m */,
+				EE4C4FAEE3D54F1BB208E3C0 /* context.c */,
+				0DEC676C681543AD836FCA6B /* egl_context.c */,
+				C34AC2A0D3A34649A25F6746 /* init.c */,
+				BE779C7B3A0E418E820150F2 /* input.c */,
+				092070BB945C4F83A36AB127 /* monitor.c */,
+				5909D69014BF45EEAAD2BB70 /* nsgl_context.m */,
+				DDB6A64BF6E64388B0F2908F /* osmesa_context.c */,
+				0EECB751BF7B4963BD8B6E54 /* posix_thread.c */,
+				95F369AE46454CB5AFDF95E5 /* vulkan.c */,
+				3F10CDDB21A0488B9DADD03E /* window.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		570C4BEE06EE47FABDDBE230 /* MeshViewer */ = {
+			isa = PBXGroup;
+			children = (
+				F757800E0BE4462DB0333529 /* MeshViewer */,
+			);
+			name = MeshViewer;
+			sourceTree = "<group>";
+		};
+		59DECBD4F562412CA2BD6D45 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				E105417C64C4400394D68239 /* glad.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		60FD20CFF5654584B43E142C /* glfw */ = {
+			isa = PBXGroup;
+			children = (
+				540A874E375445B5B40472EA /* Source Files */,
+				AD2ACE55ECBE4675ABCB341E /* Header Files */,
+				94AD00752D0D4E72A7818E57 /* CMakeLists.txt */,
+			);
+			name = glfw;
+			sourceTree = "<group>";
+		};
+		6C533C0D8249486FA9F17DCC /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E254F5460AE42B7A027AC2D /* Camera.h */,
+				BB4719F11C8B4BB1A6073DFE /* Face.h */,
+				B000D7F0C3B547B5A09EB509 /* InitShader.h */,
+				9745221CEA5C4651A4BE907F /* MeshModel.h */,
+				DEB685EB36FD487DB6A317A1 /* Renderer.h */,
+				30A0A14DD4C6401AB7417926 /* Scene.h */,
+				7E83154532414E3888A432CA /* Utils.h */,
+				059631F1B9334FEC8419E1A1 /* imgui_impl_glfw.h */,
+				73B838D14BCB472BB94C50F6 /* imgui_impl_opengl3.h */,
+				18FB33CC2971A6A600A6F983 /* Lighting.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		6E651E3350644E568A0BD356 /* glad */ = {
+			isa = PBXGroup;
+			children = (
+				97DE90EF083042D1B9D31F61 /* glad */,
+			);
+			name = glad;
+			sourceTree = "<group>";
+		};
+		97DE90EF083042D1B9D31F61 /* glad */ = {
+			isa = PBXGroup;
+			children = (
+				59DECBD4F562412CA2BD6D45 /* Source Files */,
+				0BE196805EAF4C95B1D7EFB2 /* Header Files */,
+				C5029D6AA80945CF99A6ABCD /* CMakeLists.txt */,
+			);
+			name = glad;
+			sourceTree = "<group>";
+		};
+		AD2ACE55ECBE4675ABCB341E /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				E3625C57A3EC46BCB40DF90F /* glfw_config.h */,
+				D7313294B1A7447FAFE2DABE /* glfw3.h */,
+				B529BFDA02AB4C2DACF8956B /* glfw3native.h */,
+				8288E83EE2944FCBB2D5EFB4 /* cocoa_joystick.h */,
+				05763FE43CB5467AAF97A700 /* cocoa_platform.h */,
+				F6760DEE9A324FC28C4933B0 /* egl_context.h */,
+				C11895D190AC46408CACD99B /* internal.h */,
+				20A9D6050BDD404AADBA37C0 /* mappings.h */,
+				4AA6B20EBAFF4B81BECBEE1E /* nsgl_context.h */,
+				12977AB321A54DBEA760E899 /* osmesa_context.h */,
+				E5A5AD4D9EEF4B9D8E7985A8 /* posix_thread.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		B32B06BEAB0B45CABFAEEE7D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B55619F2E20A48EB8DE186FC /* nativefiledialog */ = {
+			isa = PBXGroup;
+			children = (
+				184B50385A1442D095712C1E /* nativefiledialog */,
+			);
+			name = nativefiledialog;
+			sourceTree = "<group>";
+		};
+		B96B5282B8B14A9E848D97CD /* GLFW3 */ = {
+			isa = PBXGroup;
+			children = (
+				0867AED7C83A4A73AAE43F36 /* uninstall */,
+				60FD20CFF5654584B43E142C /* glfw */,
+			);
+			name = GLFW3;
+			sourceTree = "<group>";
+		};
+		C4E258E30AE14E3892D0942E /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		C4EEB13B16D84CCB952F79CB /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				AE2426698E1E45B8A6F52EFB /* nfd_cocoa.m */,
+				3C3A143FCE4D4E26920ED87B /* nfd_common.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		CA3DBEA07B9647E28F648BA8 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		F410AF32B85843DA890006B3 /* imgui */ = {
+			isa = PBXGroup;
+			children = (
+				F7D6082E5B584FDBB80CCF23 /* imgui */,
+			);
+			name = imgui;
+			sourceTree = "<group>";
+		};
+		F757800E0BE4462DB0333529 /* MeshViewer */ = {
+			isa = PBXGroup;
+			children = (
+				11FB7BB9249248828358229B /* Source Files */,
+				6C533C0D8249486FA9F17DCC /* Header Files */,
+				0B295AAD97F146B386298478 /* Shader Files */,
+				442C57DDB5C54F298C0CCBD9 /* CMakeLists.txt */,
+			);
+			name = MeshViewer;
+			sourceTree = "<group>";
+		};
+		F7D6082E5B584FDBB80CCF23 /* imgui */ = {
+			isa = PBXGroup;
+			children = (
+				13F7921FB9114A56992FB0CB /* Source Files */,
+				287DDC0F1AF8436E919228DD /* Header Files */,
+				AB0777B590BB4B668763AE0E /* CMakeLists.txt */,
+			);
+			name = imgui;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0B887B268D294BD1A21DF3F9 /* imgui */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9192D06476F94D16B89A80F8 /* Build configuration list for PBXNativeTarget "imgui" */;
+			buildPhases = (
+				452FC5DBD19F4B529D9F3AB4 /* Sources */,
+				A8852158B0D84F7F90D21AB7 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = imgui;
+			productName = imgui;
+			productReference = 8F4597D52F0C432386D28E90 /* libimgui.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		65B87A226573418EA13198B8 /* MeshViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA2879B24AF64B808BF58942 /* Build configuration list for PBXNativeTarget "MeshViewer" */;
+			buildPhases = (
+				8DA3063A73224358B1F8DF8B /* Sources */,
+				8DF7E144EFBE452A924F01DF /* Frameworks */,
+				AA6E2854DFB68A6308D23EC3 /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1984F7D1DD984EB2BB163EA9 /* PBXTargetDependency */,
+				350F21042B5F4D0CB69259FD /* PBXTargetDependency */,
+				FA8E77AC377E48958E88EDAC /* PBXTargetDependency */,
+				57A5C662B08C41E29F428886 /* PBXTargetDependency */,
+				64C2473B2BF242B5B3DBC31D /* PBXTargetDependency */,
+			);
+			name = MeshViewer;
+			productName = MeshViewer;
+			productReference = FD439DF677A94437A86E97C7 /* MeshViewer */;
+			productType = "com.apple.product-type.tool";
+		};
+		9185DE501EDA4C4EB79E7388 /* nativefiledialog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07148F0D159C4F15AE1F10A2 /* Build configuration list for PBXNativeTarget "nativefiledialog" */;
+			buildPhases = (
+				1FDF39E06B364FB5A9D290BD /* Sources */,
+				A63FC6DF5C4642038CC505D6 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = nativefiledialog;
+			productName = nativefiledialog;
+			productReference = A6EBC97B4E494B20B280F979 /* libnativefiledialog.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		BB3F23F3C9224CA39CE5FB2E /* glfw */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB1EF87D8BE348B1BBE4FA93 /* Build configuration list for PBXNativeTarget "glfw" */;
+			buildPhases = (
+				E3845D0F367441FB994E1545 /* Sources */,
+				49A25F820788465EA6B084DF /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = glfw;
+			productName = glfw;
+			productReference = 00900E47A0864F04A011A5FD /* libglfw3.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		FE1A6BCA59194C65A926BA6C /* glad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69D1664167B8467A8260B515 /* Build configuration list for PBXNativeTarget "glad" */;
+			buildPhases = (
+				D2D688EA56924E259ECCABE1 /* Sources */,
+				FFFC33753F574B348001082E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = glad;
+			productName = glad;
+			productReference = 7980F74C07304542804A4A65 /* libglad.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		62825871F01444909AE387BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1410;
+			};
+			buildConfigurationList = C65F471E4A324F5494065D1B /* Build configuration list for PBXProject "MeshViewer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3E24AA1DF58F414B9E4B18BE;
+			projectDirPath = ../;
+			projectRoot = "";
+			targets = (
+				D96C9657BC3D460C94DB0030 /* ALL_BUILD */,
+				65B87A226573418EA13198B8 /* MeshViewer */,
+				42D981ED87B4406F8548DE95 /* ZERO_CHECK */,
+				FE1A6BCA59194C65A926BA6C /* glad */,
+				BB3F23F3C9224CA39CE5FB2E /* glfw */,
+				0B887B268D294BD1A21DF3F9 /* imgui */,
+				6D4F8FB9AF23431E83F754D9 /* install */,
+				9185DE501EDA4C4EB79E7388 /* nativefiledialog */,
+				9D5AD0F2851C4137B477E38B /* uninstall */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		17CB3034EBFE23F940576C99 /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+				"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/CMakeFiles/ALL_BUILD",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build\n  echo Build\\ all\\ projects\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7BD56AF8A3FF6E7CF81808C9 /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+				"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/CMakeFiles/ZERO_CHECK",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build\n  make -f /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build\n  make -f /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build\n  make -f /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build\n  make -f /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/CMakeScripts/ReRunCMake.make\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build\n  /Applications/CMake.app/Contents/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build\n  /Applications/CMake.app/Contents/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build\n  /Applications/CMake.app/Contents/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build\n  /Applications/CMake.app/Contents/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A36FA767C80235EDC3FBD1AF /* Generate ThirdParty/glfw/CMakeFiles/uninstall */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate ThirdParty/glfw/CMakeFiles/uninstall";
+			outputPaths = (
+				"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/glfw/CMakeFiles/uninstall",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/glfw\n  /Applications/CMake.app/Contents/bin/cmake -P /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/glfw/cmake_uninstall.cmake\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/glfw\n  /Applications/CMake.app/Contents/bin/cmake -P /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/glfw/cmake_uninstall.cmake\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/glfw\n  /Applications/CMake.app/Contents/bin/cmake -P /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/glfw/cmake_uninstall.cmake\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/glfw\n  /Applications/CMake.app/Contents/bin/cmake -P /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/glfw/cmake_uninstall.cmake\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AA6E2854DFB68A6308D23EC3 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build\n  /Applications/CMake.app/Contents/bin/cmake -E copy /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Viewer/shaders/fshader.glsl /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Viewer/shaders/vshader.glsl /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/bin/Debug\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build\n  /Applications/CMake.app/Contents/bin/cmake -E copy /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Viewer/shaders/fshader.glsl /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Viewer/shaders/vshader.glsl /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/bin/Release\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build\n  /Applications/CMake.app/Contents/bin/cmake -E copy /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Viewer/shaders/fshader.glsl /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Viewer/shaders/vshader.glsl /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/bin/MinSizeRel\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build\n  /Applications/CMake.app/Contents/bin/cmake -E copy /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Viewer/shaders/fshader.glsl /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Viewer/shaders/vshader.glsl /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/bin/RelWithDebInfo\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1FDF39E06B364FB5A9D290BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF0B93A4C5054C46AFAB92D7 /* nfd_cocoa.m in Sources */,
+				C826D187FA694EE8844B39B0 /* nfd_common.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		452FC5DBD19F4B529D9F3AB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51ACFB5B017342B0B18CD9BA /* imgui.cpp in Sources */,
+				460D8A82D8F34EB381CB2785 /* imgui_demo.cpp in Sources */,
+				BDCA1C7C8E5145038180A76A /* imgui_draw.cpp in Sources */,
+				C394F6D90D4B492EA4F903C7 /* imgui_widgets.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DA3063A73224358B1F8DF8B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DA3C1FED1D444DCBD6D0EA6 /* Camera.cpp in Sources */,
+				88B8FF41E90D4C46BA39A89D /* Face.cpp in Sources */,
+				DE2C76E628B24C5FBC65B708 /* InitShader.cpp in Sources */,
+				02FC046AF4E24EF0AD9C7A13 /* MeshModel.cpp in Sources */,
+				EF9C8C3F410141DC9F9CB406 /* Renderer.cpp in Sources */,
+				52EF47439F454922BBED5749 /* Scene.cpp in Sources */,
+				6868A6C959A54E67BA91C36A /* Utils.cpp in Sources */,
+				F415EE4A1F464CB0BA8D4D25 /* imgui_impl_glfw.cpp in Sources */,
+				ED610CE224644019B92E3663 /* imgui_impl_opengl3.cpp in Sources */,
+				18FB33CB2971A68100A6F983 /* Lighting.cpp in Sources */,
+				62C9028258B244059DBA64A6 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2D688EA56924E259ECCABE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E98097A3AD4B4F87B0D9AA65 /* glad.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3845D0F367441FB994E1545 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2606131EF74743669A45F9B0 /* cocoa_init.m in Sources */,
+				EAD11358348A45BBAD29E910 /* cocoa_joystick.m in Sources */,
+				E7ADF78F587A466FA85A39DE /* cocoa_monitor.m in Sources */,
+				7C6B8ECFE65E45B9ADCAB57E /* cocoa_time.c in Sources */,
+				714BB14B7C6A462F837E7015 /* cocoa_window.m in Sources */,
+				D1EB04F3CC0A4D70BC3481C2 /* context.c in Sources */,
+				20BC6B7F42CB49328DBE4388 /* egl_context.c in Sources */,
+				63C82986D88E427D9217F36E /* init.c in Sources */,
+				34216DA6F6864E138AD49F49 /* input.c in Sources */,
+				CDBD625DB76F4E579C920449 /* monitor.c in Sources */,
+				575CC90068FC4C36969126F4 /* nsgl_context.m in Sources */,
+				BE2FAED1381841D09BEA1701 /* osmesa_context.c in Sources */,
+				79D8992D94BC4C798739C4D9 /* posix_thread.c in Sources */,
+				DAE4F5BD78A648B18CBF590D /* vulkan.c in Sources */,
+				7814085DDDF44ADEAC3D79F3 /* window.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0F457A95D4C34A9D93831AFF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B887B268D294BD1A21DF3F9 /* imgui */;
+			targetProxy = 48A832926BE3450F8370FBE3 /* PBXContainerItemProxy */;
+		};
+		18A14A1412DF4A36B8E7DAB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65B87A226573418EA13198B8 /* MeshViewer */;
+			targetProxy = A7819693F29B44CF95D19487 /* PBXContainerItemProxy */;
+		};
+		1984F7D1DD984EB2BB163EA9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE1A6BCA59194C65A926BA6C /* glad */;
+			targetProxy = 5227F912DE8844788CAA6D00 /* PBXContainerItemProxy */;
+		};
+		350F21042B5F4D0CB69259FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB3F23F3C9224CA39CE5FB2E /* glfw */;
+			targetProxy = DE9A9804868D44F5AF1A15BA /* PBXContainerItemProxy */;
+		};
+		4B04DE2C587D4980934CC171 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42D981ED87B4406F8548DE95 /* ZERO_CHECK */;
+			targetProxy = 1E463581CE4A49AFA2C5F96B /* PBXContainerItemProxy */;
+		};
+		562966DEB3B049D78173F550 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9185DE501EDA4C4EB79E7388 /* nativefiledialog */;
+			targetProxy = 7955C7EBB76C413D89534312 /* PBXContainerItemProxy */;
+		};
+		57A5C662B08C41E29F428886 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9185DE501EDA4C4EB79E7388 /* nativefiledialog */;
+			targetProxy = 62B373522163461786FF19F4 /* PBXContainerItemProxy */;
+		};
+		64C2473B2BF242B5B3DBC31D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42D981ED87B4406F8548DE95 /* ZERO_CHECK */;
+			targetProxy = 10CD0E8FECEA41D58F809E19 /* PBXContainerItemProxy */;
+		};
+		9D729174F8BC4EC9A11E6980 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE1A6BCA59194C65A926BA6C /* glad */;
+			targetProxy = D3CF13326167453AB1DF02BA /* PBXContainerItemProxy */;
+		};
+		B13FBE4FF32A4AE3A258B09B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D96C9657BC3D460C94DB0030 /* ALL_BUILD */;
+			targetProxy = CF05036014074ACDA32451F4 /* PBXContainerItemProxy */;
+		};
+		EC6FFE0751004A8AAEA33049 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB3F23F3C9224CA39CE5FB2E /* glfw */;
+			targetProxy = 275BFF680EA744E0BE2409F5 /* PBXContainerItemProxy */;
+		};
+		FA8E77AC377E48958E88EDAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B887B268D294BD1A21DF3F9 /* imgui */;
+			targetProxy = 124FDFDFDF3F4E0492579476 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		01144A6FA8924D8799C71BC4 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		30E7A1B0F7BE4E0DB11CA975 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/glfw";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		324EFC97DADB47AF9AD04AF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/lib/Release";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " ";
+				OTHER_LIBTOOLFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = imgui;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/imgui";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		44202F35624B42B69109E530 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/lib/MinSizeRel";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/glad/include",
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "  $(inherited)";
+				OTHER_LIBTOOLFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glad;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/glad";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		4B7FD41EB19F43D48D8A2397 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/lib/MinSizeRel";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					_GLFW_USE_CONFIG_H,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/glfw/include",
+					"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/glfw/src",
+					"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/glfw/src",
+					"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/glfw/src/ThirdParty/glfw/include",
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "  $(inherited)";
+				OTHER_LIBTOOLFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/glfw/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		4C8C81FD3D594EDBAC2221A7 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		4E0A2E3493EC4A1C9CD91438 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/glfw";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		545331E123444DD4AA3AA456 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/bin/RelWithDebInfo";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Viewer/include",
+					"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/glad/include",
+					"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/glfw/include",
+					"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/glm",
+					"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/imgui",
+					"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/nativefiledialog/nativefiledialog/src/include",
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				OTHER_CPLUSPLUSFLAGS = " ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/lib/RelWithDebInfo/libglad.a",
+					"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/lib/RelWithDebInfo/libglfw3.a",
+					"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/lib/RelWithDebInfo/libimgui.a",
+					"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/lib/RelWithDebInfo/libnativefiledialog.a",
+					"-framework",
+					OpenGL,
+					"-framework",
+					OpenGL,
+					"-framework",
+					Cocoa,
+					"-framework",
+					IOKit,
+					"-framework",
+					CoreFoundation,
+					"-framework",
+					CoreVideo,
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = MeshViewer;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		56E4CE3F6C1D4BE59CEAF2B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		5DA72D3F625F448A9A170453 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/lib/Release";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/nativefiledialog/nativefiledialog/src/include",
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "  $(inherited)";
+				OTHER_LIBTOOLFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = nativefiledialog;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/nativefiledialog";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		609C638A5B844957B973FB13 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/lib/MinSizeRel";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/nativefiledialog/nativefiledialog/src/include",
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "  $(inherited)";
+				OTHER_LIBTOOLFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = nativefiledialog;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/nativefiledialog";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		646C1CAE193448369F680FA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/lib/Debug";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					_GLFW_USE_CONFIG_H,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/glfw/include",
+					"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/glfw/src",
+					"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/glfw/src",
+					"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/glfw/src/ThirdParty/glfw/include",
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "  $(inherited)";
+				OTHER_LIBTOOLFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/glfw/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		65C2DF81045F481EBCC48528 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/lib/Release";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/glad/include",
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "  $(inherited)";
+				OTHER_LIBTOOLFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glad;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/glad";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		66A25229DFCE476AA51A827D /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		676CB95593414C5792CF61DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				MACOSX_DEPLOYMENT_TARGET = 12.5;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/build";
+			};
+			name = Release;
+		};
+		67E6383DEDF24062B2DFB594 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				MACOSX_DEPLOYMENT_TARGET = 12.5;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/build";
+			};
+			name = MinSizeRel;
+		};
+		694B7074D32746C9927D431B /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/glfw";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		70CBF1FD454645BA9FEAC618 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/bin/MinSizeRel";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Viewer/include",
+					"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/glad/include",
+					"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/glfw/include",
+					"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/glm",
+					"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/imgui",
+					"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/nativefiledialog/nativefiledialog/src/include",
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				OTHER_CPLUSPLUSFLAGS = " ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/lib/MinSizeRel/libglad.a",
+					"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/lib/MinSizeRel/libglfw3.a",
+					"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/lib/MinSizeRel/libimgui.a",
+					"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/lib/MinSizeRel/libnativefiledialog.a",
+					"-framework",
+					OpenGL,
+					"-framework",
+					OpenGL,
+					"-framework",
+					Cocoa,
+					"-framework",
+					IOKit,
+					"-framework",
+					CoreFoundation,
+					"-framework",
+					CoreVideo,
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = MeshViewer;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		8783274F608241939D94D164 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/lib/MinSizeRel";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " ";
+				OTHER_LIBTOOLFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = imgui;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/imgui";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		88071FDCA21D421B953948DE /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/lib/RelWithDebInfo";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/nativefiledialog/nativefiledialog/src/include",
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "  $(inherited)";
+				OTHER_LIBTOOLFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = nativefiledialog;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/nativefiledialog";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		8871A3B4EE7646798FEA3F1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		91210C515F5A4A2A9061E54B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/lib/Debug";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/nativefiledialog/nativefiledialog/src/include",
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "  $(inherited)";
+				OTHER_LIBTOOLFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = nativefiledialog;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/nativefiledialog";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		A105F1352EA147ECB6F8BC5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/lib/Debug";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/glad/include",
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "  $(inherited)";
+				OTHER_LIBTOOLFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glad;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/glad";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		A83D20286D7646E3BCEFEFB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/lib/Release";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					_GLFW_USE_CONFIG_H,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/glfw/include",
+					"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/glfw/src",
+					"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/glfw/src",
+					"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/glfw/src/ThirdParty/glfw/include",
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "  $(inherited)";
+				OTHER_LIBTOOLFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/glfw/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		A917BB0AC9DD4838971E4F4D /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/lib/RelWithDebInfo";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/glad/include",
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "  $(inherited)";
+				OTHER_LIBTOOLFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glad;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/glad";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		AD56ED7D48F04FD282ACF044 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/lib/RelWithDebInfo";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					_GLFW_USE_CONFIG_H,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/glfw/include",
+					"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/glfw/src",
+					"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/glfw/src",
+					"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/glfw/src/ThirdParty/glfw/include",
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "  $(inherited)";
+				OTHER_LIBTOOLFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/glfw/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		B3DAB832CCF04FDDB2D87921 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		B60B2850E5974F9EA84FB0B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		BC366AB8B5724D87B6CA5FA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/bin/Release";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Viewer/include",
+					"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/glad/include",
+					"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/glfw/include",
+					"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/glm",
+					"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/imgui",
+					"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/nativefiledialog/nativefiledialog/src/include",
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				OTHER_CPLUSPLUSFLAGS = " ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/lib/Release/libglad.a",
+					"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/lib/Release/libglfw3.a",
+					"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/lib/Release/libimgui.a",
+					"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/lib/Release/libnativefiledialog.a",
+					"-framework",
+					OpenGL,
+					"-framework",
+					OpenGL,
+					"-framework",
+					Cocoa,
+					"-framework",
+					IOKit,
+					"-framework",
+					CoreFoundation,
+					"-framework",
+					CoreVideo,
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = MeshViewer;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		BC8C6A08AED44A6A8928ED57 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		C4D1CB8623BA4632AAECC633 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				MACOSX_DEPLOYMENT_TARGET = 12.5;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/build";
+			};
+			name = RelWithDebInfo;
+		};
+		CEB7E8857ED3409DA66754D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/lib/Debug";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " ";
+				OTHER_LIBTOOLFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = imgui;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/imgui";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		D0C4BD8076914087BCFCC068 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		D4F9DE2686DC4A79B3625E29 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/lib/RelWithDebInfo";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " ";
+				OTHER_LIBTOOLFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = imgui;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/imgui";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		D6AC0E5A3FA247B78B40DA86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		DB99EF7DEF0C4BA38F174594 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/bin/Debug";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Viewer/include",
+					"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/glad/include",
+					"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/glfw/include",
+					"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/glm",
+					"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/imgui",
+					"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/nativefiledialog/nativefiledialog/src/include",
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				OTHER_CPLUSPLUSFLAGS = " ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/lib/Debug/libglad.a",
+					"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/lib/Debug/libglfw3.a",
+					"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/lib/Debug/libimgui.a",
+					"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/lib/Debug/libnativefiledialog.a",
+					"-framework",
+					OpenGL,
+					"-framework",
+					OpenGL,
+					"-framework",
+					Cocoa,
+					"-framework",
+					IOKit,
+					"-framework",
+					CoreFoundation,
+					"-framework",
+					CoreVideo,
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = MeshViewer;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		EFF5DEE5A9BE4924817F0E40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/glfw";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		F27A1918E737466E9CE7CE32 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		F31555FFF3CC4D6AAA195D41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		F4AE49852C0047F9B908B792 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				MACOSX_DEPLOYMENT_TARGET = 12.5;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07148F0D159C4F15AE1F10A2 /* Build configuration list for PBXNativeTarget "nativefiledialog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91210C515F5A4A2A9061E54B /* Debug */,
+				5DA72D3F625F448A9A170453 /* Release */,
+				609C638A5B844957B973FB13 /* MinSizeRel */,
+				88071FDCA21D421B953948DE /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		69D1664167B8467A8260B515 /* Build configuration list for PBXNativeTarget "glad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A105F1352EA147ECB6F8BC5F /* Debug */,
+				65C2DF81045F481EBCC48528 /* Release */,
+				44202F35624B42B69109E530 /* MinSizeRel */,
+				A917BB0AC9DD4838971E4F4D /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7BDA9F4BBCBD4AD6B027C6A3 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B60B2850E5974F9EA84FB0B7 /* Debug */,
+				D6AC0E5A3FA247B78B40DA86 /* Release */,
+				BC8C6A08AED44A6A8928ED57 /* MinSizeRel */,
+				4C8C81FD3D594EDBAC2221A7 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9192D06476F94D16B89A80F8 /* Build configuration list for PBXNativeTarget "imgui" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEB7E8857ED3409DA66754D2 /* Debug */,
+				324EFC97DADB47AF9AD04AF4 /* Release */,
+				8783274F608241939D94D164 /* MinSizeRel */,
+				D4F9DE2686DC4A79B3625E29 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B487C9AC16C845DC9BD1A784 /* Build configuration list for PBXAggregateTarget "uninstall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30E7A1B0F7BE4E0DB11CA975 /* Debug */,
+				EFF5DEE5A9BE4924817F0E40 /* Release */,
+				4E0A2E3493EC4A1C9CD91438 /* MinSizeRel */,
+				694B7074D32746C9927D431B /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C65F471E4A324F5494065D1B /* Build configuration list for PBXProject "MeshViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4AE49852C0047F9B908B792 /* Debug */,
+				676CB95593414C5792CF61DE /* Release */,
+				67E6383DEDF24062B2DFB594 /* MinSizeRel */,
+				C4D1CB8623BA4632AAECC633 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CD4FF1B8903B4F84BDE4CF14 /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3DAB832CCF04FDDB2D87921 /* Debug */,
+				F31555FFF3CC4D6AAA195D41 /* Release */,
+				66A25229DFCE476AA51A827D /* MinSizeRel */,
+				01144A6FA8924D8799C71BC4 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CEBA3C0DB9C0413DBE9D1E54 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56E4CE3F6C1D4BE59CEAF2B3 /* Debug */,
+				8871A3B4EE7646798FEA3F1A /* Release */,
+				D0C4BD8076914087BCFCC068 /* MinSizeRel */,
+				F27A1918E737466E9CE7CE32 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DA2879B24AF64B808BF58942 /* Build configuration list for PBXNativeTarget "MeshViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB99EF7DEF0C4BA38F174594 /* Debug */,
+				BC366AB8B5724D87B6CA5FA3 /* Release */,
+				70CBF1FD454645BA9FEAC618 /* MinSizeRel */,
+				545331E123444DD4AA3AA456 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		EB1EF87D8BE348B1BBE4FA93 /* Build configuration list for PBXNativeTarget "glfw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				646C1CAE193448369F680FA9 /* Debug */,
+				A83D20286D7646E3BCEFEFB1 /* Release */,
+				4B7FD41EB19F43D48D8A2397 /* MinSizeRel */,
+				AD56ED7D48F04FD282ACF044 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 62825871F01444909AE387BE /* Project object */;
+}

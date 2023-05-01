@@ -1,0 +1,914 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		42D981ED87B4406F8548DE95 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 9A980A32B5364B5EBCEDAF63 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				9665E6C5C73221BD7E83F8B1 /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		6D4F8FB9AF23431E83F754D9 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 280EF60DAE02454392783CFF /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				2711A9491C5541259B8D34BB /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		D96C9657BC3D460C94DB0030 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 2F7B7E845E584C3CB315BA73 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				D64E638794DFEFCAECE8117E /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				C58C41B4C81B4157931361F7 /* PBXTargetDependency */,
+				177ECC885E3548EBA2ED7F61 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0EADA40780084BBCA5C54A7C /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/imgui/imgui/imgui.h */ = {isa = PBXBuildFile; fileRef = 0A158A0A11684F23AB639E8C /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/imgui/imgui/imgui.h */; };
+		1BC1AAED497E4BD8802AC17A /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/imgui/imgui/imgui.cpp */ = {isa = PBXBuildFile; fileRef = 828394C1FD42473AAC884C39 /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/imgui/imgui/imgui.cpp */; };
+		52E1E0703C9C4424A3074952 /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/imgui/imgui/imconfig.h */ = {isa = PBXBuildFile; fileRef = 2C009E25D63C4C60932F6A16 /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/imgui/imgui/imconfig.h */; };
+		53F779DA77904CDE9E2DFCD3 /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/imgui/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 9D399FF50A2A496F9A73C03A /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/imgui/CMakeLists.txt */; };
+		5B4DBBF8A9E74A53ADF6A62B /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/imgui/imgui/imstb_textedit.h */ = {isa = PBXBuildFile; fileRef = 4573EB665F174E04BD162491 /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/imgui/imgui/imstb_textedit.h */; };
+		6BF8D3E9FAB3432293DC05CB /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/imgui/imgui/imgui_demo.cpp */ = {isa = PBXBuildFile; fileRef = 2E34B2235BE6403281022017 /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/imgui/imgui/imgui_demo.cpp */; };
+		87A0F8065AE54A05B1844A7C /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/imgui/imgui/imgui_widgets.cpp */ = {isa = PBXBuildFile; fileRef = C94845EAC9E3424BA2BCA775 /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/imgui/imgui/imgui_widgets.cpp */; };
+		CC24AA87697841829E2C674F /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/imgui/imgui/imstb_rectpack.h */ = {isa = PBXBuildFile; fileRef = 2545A046FD024F3496F6D99E /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/imgui/imgui/imstb_rectpack.h */; };
+		CE12865D4BA84C5D84BE7416 /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/imgui/imgui/imstb_truetype.h */ = {isa = PBXBuildFile; fileRef = A27071FD25254249AC340A35 /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/imgui/imgui/imstb_truetype.h */; };
+		E8F2CCB3C5C146C7BB41F2BE /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/imgui/imgui/imgui_draw.cpp */ = {isa = PBXBuildFile; fileRef = 0817C86B0DA84FCE8D7BA4CA /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/imgui/imgui/imgui_draw.cpp */; };
+		F9E3F538F10E4F7BBFA2F8BC /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/imgui/imgui/imgui_internal.h */ = {isa = PBXBuildFile; fileRef = 8109514BBA4E40E3927A72A5 /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/imgui/imgui/imgui_internal.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		05CF01570369416498375255 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		4E38480C1B8F4FE7BD1185E5 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		6C26696ECA75490291289BAE /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		7AA602A4323144FF91071ED3 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		2F21435C4B4445F6B26DFD7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90A7F5173F96444E8C7C0BE4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B887B268D294BD1A21DF3F9;
+			remoteInfo = imgui;
+		};
+		5B48216985EE479B8989BCBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90A7F5173F96444E8C7C0BE4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42D981ED87B4406F8548DE95;
+			remoteInfo = ZERO_CHECK;
+		};
+		6B48F9419CD343B8BC51097E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90A7F5173F96444E8C7C0BE4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D96C9657BC3D460C94DB0030;
+			remoteInfo = ALL_BUILD;
+		};
+		A60381DF86484441A51BD487 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90A7F5173F96444E8C7C0BE4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42D981ED87B4406F8548DE95;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0817C86B0DA84FCE8D7BA4CA /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/imgui/imgui/imgui_draw.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = imgui_draw.cpp; path = imgui/imgui_draw.cpp; sourceTree = SOURCE_ROOT; };
+		0A158A0A11684F23AB639E8C /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/imgui/imgui/imgui.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = imgui.h; path = imgui/imgui.h; sourceTree = SOURCE_ROOT; };
+		2545A046FD024F3496F6D99E /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/imgui/imgui/imstb_rectpack.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = imstb_rectpack.h; path = imgui/imstb_rectpack.h; sourceTree = SOURCE_ROOT; };
+		2C009E25D63C4C60932F6A16 /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/imgui/imgui/imconfig.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = imconfig.h; path = imgui/imconfig.h; sourceTree = SOURCE_ROOT; };
+		2E34B2235BE6403281022017 /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/imgui/imgui/imgui_demo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = imgui_demo.cpp; path = imgui/imgui_demo.cpp; sourceTree = SOURCE_ROOT; };
+		4573EB665F174E04BD162491 /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/imgui/imgui/imstb_textedit.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = imstb_textedit.h; path = imgui/imstb_textedit.h; sourceTree = SOURCE_ROOT; };
+		7057871EFB1B458297621277 /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/imgui/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		8109514BBA4E40E3927A72A5 /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/imgui/imgui/imgui_internal.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = imgui_internal.h; path = imgui/imgui_internal.h; sourceTree = SOURCE_ROOT; };
+		828394C1FD42473AAC884C39 /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/imgui/imgui/imgui.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = imgui.cpp; path = imgui/imgui.cpp; sourceTree = SOURCE_ROOT; };
+		9D399FF50A2A496F9A73C03A /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/imgui/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		A27071FD25254249AC340A35 /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/imgui/imgui/imstb_truetype.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = imstb_truetype.h; path = imgui/imstb_truetype.h; sourceTree = SOURCE_ROOT; };
+		B2EF0C2FDC344A84BE2FB906 /* imgui */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libimgui.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C94845EAC9E3424BA2BCA775 /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/imgui/imgui/imgui_widgets.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = imgui_widgets.cpp; path = imgui/imgui_widgets.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11DDB8462B2944E2B0C25767 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		016FF9B361E545DDB5206A94 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				53EF08DA738B418590B7C170 /* CMake Rules */,
+				7057871EFB1B458297621277 /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/imgui/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		42F0EC80E8B34746B8875E2C /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				2C009E25D63C4C60932F6A16 /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/imgui/imgui/imconfig.h */,
+				0A158A0A11684F23AB639E8C /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/imgui/imgui/imgui.h */,
+				8109514BBA4E40E3927A72A5 /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/imgui/imgui/imgui_internal.h */,
+				2545A046FD024F3496F6D99E /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/imgui/imgui/imstb_rectpack.h */,
+				4573EB665F174E04BD162491 /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/imgui/imgui/imstb_textedit.h */,
+				A27071FD25254249AC340A35 /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/imgui/imgui/imstb_truetype.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		53EF08DA738B418590B7C170 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		55B0E944B9B84C369C387E65 /* imgui */ = {
+			isa = PBXGroup;
+			children = (
+				DF7A49E02A294E45A36E339B /* imgui */,
+			);
+			name = imgui;
+			sourceTree = "<group>";
+		};
+		69160F762C2C4714B24C559B = {
+			isa = PBXGroup;
+			children = (
+				55B0E944B9B84C369C387E65 /* imgui */,
+				016FF9B361E545DDB5206A94 /* ALL_BUILD */,
+				6AB4A8C7896C4067AF6655CE /* Products */,
+				97456BA6A2FD47309555F6BF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6AB4A8C7896C4067AF6655CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B2EF0C2FDC344A84BE2FB906 /* imgui */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		97456BA6A2FD47309555F6BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD205F551D0B482BB750A76C /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				828394C1FD42473AAC884C39 /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/imgui/imgui/imgui.cpp */,
+				2E34B2235BE6403281022017 /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/imgui/imgui/imgui_demo.cpp */,
+				0817C86B0DA84FCE8D7BA4CA /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/imgui/imgui/imgui_draw.cpp */,
+				C94845EAC9E3424BA2BCA775 /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/imgui/imgui/imgui_widgets.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		DF7A49E02A294E45A36E339B /* imgui */ = {
+			isa = PBXGroup;
+			children = (
+				CD205F551D0B482BB750A76C /* Source Files */,
+				42F0EC80E8B34746B8875E2C /* Header Files */,
+				9D399FF50A2A496F9A73C03A /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/imgui/CMakeLists.txt */,
+			);
+			name = imgui;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0B887B268D294BD1A21DF3F9 /* imgui */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5E8580C650A40BAAAAFC10F /* Build configuration list for PBXNativeTarget "imgui" */;
+			buildPhases = (
+				175379BE5DBB4472AE9A0452 /* Sources */,
+				11DDB8462B2944E2B0C25767 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				76182BA34F0D40E383CE8898 /* PBXTargetDependency */,
+			);
+			name = imgui;
+			productName = imgui;
+			productReference = B2EF0C2FDC344A84BE2FB906 /* imgui */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		90A7F5173F96444E8C7C0BE4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1410;
+			};
+			buildConfigurationList = 5683A309D5B74473ACB253D2 /* Build configuration list for PBXProject "imgui" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				7AA602A4323144FF91071ED3 /* Debug */,
+				6C26696ECA75490291289BAE /* Release */,
+				4E38480C1B8F4FE7BD1185E5 /* MinSizeRel */,
+				05CF01570369416498375255 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 69160F762C2C4714B24C559B;
+			projectDirPath = ../../../ThirdParty/imgui;
+			projectRoot = "";
+			targets = (
+				D96C9657BC3D460C94DB0030 /* ALL_BUILD */,
+				42D981ED87B4406F8548DE95 /* ZERO_CHECK */,
+				0B887B268D294BD1A21DF3F9 /* imgui */,
+				6D4F8FB9AF23431E83F754D9 /* install */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C0110FC8322DE7E50886E21 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		87AF4882E018677E2624B544 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/imgui
+  /Applications/CMake.app/Contents/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/imgui
+  /Applications/CMake.app/Contents/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/imgui
+  /Applications/CMake.app/Contents/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/imgui
+  /Applications/CMake.app/Contents/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		9665E6C5C73221BD7E83F8B1 /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/imgui/CMakeFiles/ZERO_CHECK"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/imgui
+  make -f /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/imgui/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/imgui
+  make -f /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/imgui/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/imgui
+  make -f /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/imgui/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/imgui
+  make -f /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/imgui/CMakeScripts/ReRunCMake.make
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		9B50530E35CC49C82C2FACCF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		D64E638794DFEFCAECE8117E /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/imgui/CMakeFiles/ALL_BUILD"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/imgui
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/imgui
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/imgui
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/imgui
+  echo Build\\ all\\ projects
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		175379BE5DBB4472AE9A0452 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BC1AAED497E4BD8802AC17A /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/imgui/imgui/imgui.cpp */,
+				6BF8D3E9FAB3432293DC05CB /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/imgui/imgui/imgui_demo.cpp */,
+				E8F2CCB3C5C146C7BB41F2BE /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/imgui/imgui/imgui_draw.cpp */,
+				87A0F8065AE54A05B1844A7C /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/imgui/imgui/imgui_widgets.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		177ECC885E3548EBA2ED7F61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42D981ED87B4406F8548DE95 /* ZERO_CHECK */;
+			targetProxy = A60381DF86484441A51BD487 /* PBXContainerItemProxy */;
+		};
+		2711A9491C5541259B8D34BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D96C9657BC3D460C94DB0030 /* ALL_BUILD */;
+			targetProxy = 6B48F9419CD343B8BC51097E /* PBXContainerItemProxy */;
+		};
+		76182BA34F0D40E383CE8898 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42D981ED87B4406F8548DE95 /* ZERO_CHECK */;
+			targetProxy = 5B48216985EE479B8989BCBF /* PBXContainerItemProxy */;
+		};
+		C58C41B4C81B4157931361F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B887B268D294BD1A21DF3F9 /* imgui */;
+			targetProxy = 2F21435C4B4445F6B26DFD7A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1B03C11DBD5045738CB72A36 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/imgui";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		278548E41A774BE5B707E3E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/imgui";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		2A7D165B8FB04A5C887300E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/imgui";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		338B6F71199D48EF8621A86B /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/lib/RelWithDebInfo";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = imgui;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/imgui";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		3933D5167AA648B8B1D8F876 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/lib/MinSizeRel";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = imgui;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/imgui";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		4C12A7CBD2F0410D8F0AD460 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 12.5;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk;
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/imgui/build";
+			};
+			name = MinSizeRel;
+		};
+		4D57E5D5F5D84CBAAAFD3572 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/imgui";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		4E3C37F0EE524662907BFE16 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/imgui";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		5A4E94EB896743EBB1207014 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/imgui";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		674BA0DA308347C5A2B2E118 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 12.5;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk;
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/imgui/build";
+			};
+			name = RelWithDebInfo;
+		};
+		870889A9829A43ED80417569 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/imgui";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		986FD7B368B6484CA06C0149 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/imgui";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		997A344CB16E46CC85A79265 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/lib/Debug";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = imgui;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/imgui";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		9DAAAF66EF764BC388FEC907 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 12.5;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk;
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/imgui/build";
+			};
+			name = Debug;
+		};
+		A6F2041585624A35965DA0A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/imgui";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		AF4518B7930E4F9E9859DBE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 12.5;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk;
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/imgui/build";
+			};
+			name = Release;
+		};
+		BD3BDCEAE2C44851B3D8F7A3 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/imgui";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		C1E05A27B64D4A53980385E5 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/imgui";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		DA61DE1A929C48F6AD1E3F97 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/imgui";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		E8E2B8AA09B44D408C19994E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/lib/Release";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = imgui;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/imgui";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		280EF60DAE02454392783CFF /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				278548E41A774BE5B707E3E8 /* Debug */,
+				2A7D165B8FB04A5C887300E2 /* Release */,
+				BD3BDCEAE2C44851B3D8F7A3 /* MinSizeRel */,
+				DA61DE1A929C48F6AD1E3F97 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		2F7B7E845E584C3CB315BA73 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D57E5D5F5D84CBAAAFD3572 /* Debug */,
+				870889A9829A43ED80417569 /* Release */,
+				4E3C37F0EE524662907BFE16 /* MinSizeRel */,
+				986FD7B368B6484CA06C0149 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5683A309D5B74473ACB253D2 /* Build configuration list for PBXProject "imgui" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DAAAF66EF764BC388FEC907 /* Debug */,
+				AF4518B7930E4F9E9859DBE0 /* Release */,
+				4C12A7CBD2F0410D8F0AD460 /* MinSizeRel */,
+				674BA0DA308347C5A2B2E118 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9A980A32B5364B5EBCEDAF63 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A4E94EB896743EBB1207014 /* Debug */,
+				A6F2041585624A35965DA0A5 /* Release */,
+				1B03C11DBD5045738CB72A36 /* MinSizeRel */,
+				C1E05A27B64D4A53980385E5 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F5E8580C650A40BAAAAFC10F /* Build configuration list for PBXNativeTarget "imgui" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				997A344CB16E46CC85A79265 /* Debug */,
+				E8E2B8AA09B44D408C19994E /* Release */,
+				3933D5167AA648B8B1D8F876 /* MinSizeRel */,
+				338B6F71199D48EF8621A86B /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 90A7F5173F96444E8C7C0BE4 /* Project object */;
+}

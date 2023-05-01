@@ -1,0 +1,12 @@
+Target dependency graph (6 targets)
+glad in MeshViewer, no dependencies
+glfw in MeshViewer, no dependencies
+imgui in MeshViewer, no dependencies
+nativefiledialog in MeshViewer, no dependencies
+ZERO_CHECK in MeshViewer, no dependencies
+MeshViewer in MeshViewer, depends on:
+glad in MeshViewer (explicit)
+glfw in MeshViewer (explicit)
+imgui in MeshViewer (explicit)
+nativefiledialog in MeshViewer (explicit)
+ZERO_CHECK in MeshViewer (explicit)

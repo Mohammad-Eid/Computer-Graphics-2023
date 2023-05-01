@@ -1,0 +1,894 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		42D981ED87B4406F8548DE95 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = DA8DB4A465B14B01BC4A26BF /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				D33540C919F28AC6D9C94DB0 /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		6D4F8FB9AF23431E83F754D9 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 8C0D2D1072F04778AC1CB602 /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				D3EA43AA2D044C43A83C63DB /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		D96C9657BC3D460C94DB0030 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 6A9E6BEC25B8462FBB634384 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				5072B11DD7040D4EE176615A /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				124277A7F3BF4E1CA2192916 /* PBXTargetDependency */,
+				534FC38323D143C8AE9E632A /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		022AAD856405449C88FF4BE0 /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/glad/include/KHR/khrplatform.h */ = {isa = PBXBuildFile; fileRef = 00B886D6399648A88C60BFFF /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/glad/include/KHR/khrplatform.h */; };
+		45325E7956BD4F3B90E81980 /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/glad/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 449321EF458D44B49FF7D9BE /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/glad/CMakeLists.txt */; };
+		77D500B151F24917BB16A7C7 /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/glad/include/glad/glad.h */ = {isa = PBXBuildFile; fileRef = C7A6CF58D05E427F889CBE53 /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/glad/include/glad/glad.h */; };
+		91F15EA6077B469F91B9FB91 /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/glad/src/glad.c */ = {isa = PBXBuildFile; fileRef = 58F60ACDB79343E3988B7753 /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/glad/src/glad.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		334D70EF36024619B0A4B59F /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		33A2B4FD44F3424AB295E354 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		BB8CF9ABCF034ABC89C9ED8E /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		C6B95FFF1D554907B90F1E02 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		10EFD79F23F54E47850158D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A8EAC8D99744D039BFD1474 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42D981ED87B4406F8548DE95;
+			remoteInfo = ZERO_CHECK;
+		};
+		8478226660BB41A8841B5343 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A8EAC8D99744D039BFD1474 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE1A6BCA59194C65A926BA6C;
+			remoteInfo = glad;
+		};
+		AB57EB93A9964003ABC8FC77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A8EAC8D99744D039BFD1474 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D96C9657BC3D460C94DB0030;
+			remoteInfo = ALL_BUILD;
+		};
+		F5B22A6D28E44879AD553D1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A8EAC8D99744D039BFD1474 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42D981ED87B4406F8548DE95;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00B886D6399648A88C60BFFF /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/glad/include/KHR/khrplatform.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = khrplatform.h; path = include/KHR/khrplatform.h; sourceTree = SOURCE_ROOT; };
+		449321EF458D44B49FF7D9BE /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/glad/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		58F60ACDB79343E3988B7753 /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/glad/src/glad.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = glad.c; path = src/glad.c; sourceTree = SOURCE_ROOT; };
+		A419B05D94D74271BA463C46 /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/glad/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		C7A6CF58D05E427F889CBE53 /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/glad/include/glad/glad.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glad.h; path = include/glad/glad.h; sourceTree = SOURCE_ROOT; };
+		E6C83337329F4B3EB6A343B4 /* glad */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libglad.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		356BCD89F44549DBAC9AE6BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07A1CFFD1BC04FFC845EC5A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E6C83337329F4B3EB6A343B4 /* glad */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		13CB19E6305243ED8FED9C5F /* glad */ = {
+			isa = PBXGroup;
+			children = (
+				1B9F970615644EE5A684AB0F /* glad */,
+			);
+			name = glad;
+			sourceTree = "<group>";
+		};
+		1B9F970615644EE5A684AB0F /* glad */ = {
+			isa = PBXGroup;
+			children = (
+				9548C9807A014C82981AE980 /* Source Files */,
+				7C97572510F3438F97ECDB64 /* Header Files */,
+				449321EF458D44B49FF7D9BE /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/glad/CMakeLists.txt */,
+			);
+			name = glad;
+			sourceTree = "<group>";
+		};
+		2CD76623FD214FEF889A3EBA = {
+			isa = PBXGroup;
+			children = (
+				13CB19E6305243ED8FED9C5F /* glad */,
+				B563B56C4DDE49C38C0096DF /* ALL_BUILD */,
+				07A1CFFD1BC04FFC845EC5A1 /* Products */,
+				328F7D5156F648EA870881A8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2D3E72123A4A4874916BA96B /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		328F7D5156F648EA870881A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7C97572510F3438F97ECDB64 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				00B886D6399648A88C60BFFF /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/glad/include/KHR/khrplatform.h */,
+				C7A6CF58D05E427F889CBE53 /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/glad/include/glad/glad.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		9548C9807A014C82981AE980 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				58F60ACDB79343E3988B7753 /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/glad/src/glad.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		B563B56C4DDE49C38C0096DF /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				2D3E72123A4A4874916BA96B /* CMake Rules */,
+				A419B05D94D74271BA463C46 /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/glad/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FE1A6BCA59194C65A926BA6C /* glad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 371BCFDAE7F84C5A976A7A14 /* Build configuration list for PBXNativeTarget "glad" */;
+			buildPhases = (
+				9C0FCA1F46464C45B96A3037 /* Sources */,
+				356BCD89F44549DBAC9AE6BD /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0F87F58197BA4C36A9BC800A /* PBXTargetDependency */,
+			);
+			name = glad;
+			productName = glad;
+			productReference = E6C83337329F4B3EB6A343B4 /* glad */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6A8EAC8D99744D039BFD1474 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1410;
+			};
+			buildConfigurationList = 56EF7330B8894B96B6ADD5AB /* Build configuration list for PBXProject "glad" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				334D70EF36024619B0A4B59F /* Debug */,
+				C6B95FFF1D554907B90F1E02 /* Release */,
+				BB8CF9ABCF034ABC89C9ED8E /* MinSizeRel */,
+				33A2B4FD44F3424AB295E354 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 2CD76623FD214FEF889A3EBA;
+			projectDirPath = ../../../ThirdParty/glad;
+			projectRoot = "";
+			targets = (
+				D96C9657BC3D460C94DB0030 /* ALL_BUILD */,
+				42D981ED87B4406F8548DE95 /* ZERO_CHECK */,
+				FE1A6BCA59194C65A926BA6C /* glad */,
+				6D4F8FB9AF23431E83F754D9 /* install */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C0110FC8322DE7E50886E21 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		5072B11DD7040D4EE176615A /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/glad/CMakeFiles/ALL_BUILD"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/glad
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/glad
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/glad
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/glad
+  echo Build\\ all\\ projects
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		87AF4882E018677E2624B544 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/glad
+  /Applications/CMake.app/Contents/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/glad
+  /Applications/CMake.app/Contents/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/glad
+  /Applications/CMake.app/Contents/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/glad
+  /Applications/CMake.app/Contents/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		9B50530E35CC49C82C2FACCF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		D33540C919F28AC6D9C94DB0 /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+"/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/glad/CMakeFiles/ZERO_CHECK"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/glad
+  make -f /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/glad/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/glad
+  make -f /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/glad/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/glad
+  make -f /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/glad/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/glad
+  make -f /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/glad/CMakeScripts/ReRunCMake.make
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9C0FCA1F46464C45B96A3037 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91F15EA6077B469F91B9FB91 /* /Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/glad/src/glad.c */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0F87F58197BA4C36A9BC800A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42D981ED87B4406F8548DE95 /* ZERO_CHECK */;
+			targetProxy = 10EFD79F23F54E47850158D8 /* PBXContainerItemProxy */;
+		};
+		124277A7F3BF4E1CA2192916 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE1A6BCA59194C65A926BA6C /* glad */;
+			targetProxy = 8478226660BB41A8841B5343 /* PBXContainerItemProxy */;
+		};
+		534FC38323D143C8AE9E632A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42D981ED87B4406F8548DE95 /* ZERO_CHECK */;
+			targetProxy = F5B22A6D28E44879AD553D1D /* PBXContainerItemProxy */;
+		};
+		D3EA43AA2D044C43A83C63DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D96C9657BC3D460C94DB0030 /* ALL_BUILD */;
+			targetProxy = AB57EB93A9964003ABC8FC77 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		01395BFA4EFD4B7DA3F4CCC4 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/glad";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		090DC3E7681F4BD3B3B72E9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 12.5;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk;
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/glad/build";
+			};
+			name = Debug;
+		};
+		10300806D3754665B8E8EDB5 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/glad";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		2085D9F1558A4217A8D45B76 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/lib/MinSizeRel";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/glad/include","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (" ","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glad;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/glad";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		3AC366B456AA46BAB29F067F /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 12.5;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk;
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/glad/build";
+			};
+			name = RelWithDebInfo;
+		};
+		42D7B481ECD14EEA861028DD /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/lib/RelWithDebInfo";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/glad/include","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (" ","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glad;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/glad";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		58091D49753148EFBFDC8C84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/glad";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		5E48D84ADEAA433F8750BFE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/glad";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		7375B22C1E374024B74E74D8 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/glad";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		75641A1C028C4A7580AFF777 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/glad";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		7621D739EA1045C78C8BB751 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/lib/Release";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/glad/include","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (" ","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glad;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/glad";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		77ACA20CC74B47ACA2D4E46F /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/glad";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		8BC74224D5C64DA991ABE121 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 12.5;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk;
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/glad/build";
+			};
+			name = Release;
+		};
+		8E3F6B6FF1FF4A51AEE3C744 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/glad";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		9D97ED523ED746B9AFD23199 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/lib/Debug";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/ThirdParty/glad/include","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (" ","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glad;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/glad";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		BC61DF3B684C4926928074EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/glad";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		C3C499377DCB48FF8CEB91C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/glad";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		D58FD30274174A908A7725AA /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/glad";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		E10F44D471084ED8B10BE631 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/glad";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		E124568F1D0C4DCDBAE3DEF0 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 12.5;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk;
+				SYMROOT = "/Users/mohammadeid/Documents/GitHub/computer-graphics-2023-muhammad-sliman/Build/ThirdParty/glad/build";
+			};
+			name = MinSizeRel;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		371BCFDAE7F84C5A976A7A14 /* Build configuration list for PBXNativeTarget "glad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D97ED523ED746B9AFD23199 /* Debug */,
+				7621D739EA1045C78C8BB751 /* Release */,
+				2085D9F1558A4217A8D45B76 /* MinSizeRel */,
+				42D7B481ECD14EEA861028DD /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		56EF7330B8894B96B6ADD5AB /* Build configuration list for PBXProject "glad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				090DC3E7681F4BD3B3B72E9D /* Debug */,
+				8BC74224D5C64DA991ABE121 /* Release */,
+				E124568F1D0C4DCDBAE3DEF0 /* MinSizeRel */,
+				3AC366B456AA46BAB29F067F /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6A9E6BEC25B8462FBB634384 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC61DF3B684C4926928074EF /* Debug */,
+				5E48D84ADEAA433F8750BFE1 /* Release */,
+				01395BFA4EFD4B7DA3F4CCC4 /* MinSizeRel */,
+				7375B22C1E374024B74E74D8 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8C0D2D1072F04778AC1CB602 /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3C499377DCB48FF8CEB91C9 /* Debug */,
+				8E3F6B6FF1FF4A51AEE3C744 /* Release */,
+				D58FD30274174A908A7725AA /* MinSizeRel */,
+				10300806D3754665B8E8EDB5 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DA8DB4A465B14B01BC4A26BF /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75641A1C028C4A7580AFF777 /* Debug */,
+				58091D49753148EFBFDC8C84 /* Release */,
+				77ACA20CC74B47ACA2D4E46F /* MinSizeRel */,
+				E10F44D471084ED8B10BE631 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6A8EAC8D99744D039BFD1474 /* Project object */;
+}
